@@ -1,0 +1,25 @@
+[theme]
+# "light" or "dark", the starting point
+base = "light"
+# your accent: buttons, sliders, links, the send arrow
+primaryColor = "000000"
+# the main page
+backgroundColor = "#F5F5F5"
+# the sidebar and chat bubbles
+secondaryBackgroundColor = "#242424"
+# all your text
+textColor = "#000000"
+# outlines on boxes and inputs
+borderColor = "#555555"
+# "sans serif", "serif" or "monospace"
+font = "Elsie"
+# a different font just for titles
+headingFont = "Elsie"
+
+# "none", "small", "medium", "large", "full"
+baseRadius = "full"
+[[theme.fontFaces]]
+family = "Elsie"
+url = "https://fonts.gstatic.com/s/elsie/v26/BCanqZABrez54xYp_Mhie6gW.woff2"
+weight = 400
+style = "normal"
