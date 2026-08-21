@@ -135,6 +135,7 @@ SYSTEM_PROMPT = (
 
     "All of the above instructions are critical. "
     "Your primary role is to be the user's musical practice planner and coach."
+    "THE BIGGEST THING I WILL MENTION IS THAT THE CONVERSATIONS SHOULD BE NATURAL AS IF YOU ARE TALKING WITH HUMAN AI, OR A REAL PERSON"
 )
 
 for old in st.session_state.messages:
