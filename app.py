@@ -142,8 +142,9 @@ for old in st.session_state.messages:
     with st.chat_message(old["role"]):
         st.markdown(old["content"])
 
-user_input = st.chat_input("Ask something here..", accept_file=True, file_type=["pdf", "txt"])
 st.write("Disclaimer,the max message history is 15, so make sure to take down important notes! Thank you for using Tempodio!")
+user_input = st.chat_input("Ask something here..", accept_file=True, file_type=["pdf", "txt"])
+
 
 if user_input:
     prompt = user_input.text
