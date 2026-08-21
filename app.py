@@ -48,8 +48,8 @@ def store_conversation(question, answer):
     )
     return len(chunks)
 
-st.title("🎵Tempodio 🎵")
-st.header("🎸🎹 Ask me anything about music training, practice, and improving your skills! 🥁🎯")
+st.header("🎵Tempodio 🎵")
+st.subheader("🎸🎹 Ask me anything about music training, practice, and improving your skills! 🥁🎯")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
