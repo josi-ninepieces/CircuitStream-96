@@ -50,7 +50,7 @@ def store_conversation(question, answer):
     return len(chunks)
 
 st.header("🎵 Tempodio 🎵")
-st.write("🎸🎹 Ask me anything about music training, practice, and improving your skills! 🥁🎯 Happy Training! 🎶")
+st.caption("🎸🎹 Ask me anything about music training, practice, and improving your skills! 🥁🎯 Happy Training! 🎶")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
