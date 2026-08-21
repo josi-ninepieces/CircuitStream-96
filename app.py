@@ -5,6 +5,7 @@ from openai import OpenAI
 
 import chromadb
 from doc_helper import read_file
+print("ST.WRITE TYPE:", type(st.write))
 
 load_dotenv()
 import tempfile, os
