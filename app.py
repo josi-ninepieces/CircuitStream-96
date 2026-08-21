@@ -49,7 +49,7 @@ def store_conversation(question, answer):
     return len(chunks)
 
 st.header("🎵 Tempodio 🎵")
-st.write("🎸🎹 Ask me anything about music training, practice, and improving your skills! 🥁🎯 Happy Training! 🎶")
+st.markdown("🎸🎹 Ask me anything about music training, practice, and improving your skills! 🥁🎯 Happy Training! 🎶")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -142,7 +142,7 @@ for old in st.session_state.messages:
     with st.chat_message(old["role"]):
         st.markdown(old["content"])
 
-st.write("Disclaimer,the max message history is 15, so make sure to take down important notes! Thank you for using Tempodio!")
+st.markdown("Disclaimer,the max message history is 15, so make sure to take down important notes! Thank you for using Tempodio!")
 user_input = st.chat_input("Ask something here..", accept_file=True, file_type=["pdf", "txt"])
 
 
