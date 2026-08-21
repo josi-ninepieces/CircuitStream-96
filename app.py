@@ -74,8 +74,7 @@ with st.sidebar:
     st.caption(f"{len(st.session_state.messages)} messages have been sent in this chat")
     st.caption(f"{brain.count()} chunks stored inside the chat")
     st.caption(f"{memory.count()} past conversation chunks stored")
-
-st.caption(" - Created by josi_ninepieces")
+    st.caption(" - Created by josi_ninepieces")
 
 SYSTEM_PROMPT = (
     "You are Tempodio, an AI-powered musical practice planner and coach. "
@@ -144,6 +143,7 @@ for old in st.session_state.messages:
 
 st.markdown("Disclaimer,the max message history is 15, so make sure to take down important notes! Thank you for using Tempodio!")
 user_input = st.chat_input("Ask something here..", accept_file=True, file_type=["pdf", "txt"])
+
 
 
 if user_input:
