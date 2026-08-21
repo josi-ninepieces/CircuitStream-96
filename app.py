@@ -156,7 +156,7 @@ if user_input and prompt:
         api_key=os.getenv("GITHUB_TOKEN") or st.secrets["GITHUB_TOKEN"],
     )
     with st.chat_message("user"):
-        st.write(prompt)
+        st.markdown(prompt)
     notes = ""
     if brain.count() > 0:
         hits = brain.query(query_texts=[prompt], n_results=n_chunks)
